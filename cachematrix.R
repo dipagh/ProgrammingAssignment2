@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function computes the inverse of the special "matrix" returned by above function
 
 cacheSolve <- function(x, ...) {
-  ##check square invertable matrix
+  ##check matrix is invertable or not
         ## Return a matrix that is the inverse of 'x'
   inv<-x$getinv()
   if(!is.null(inv)){
